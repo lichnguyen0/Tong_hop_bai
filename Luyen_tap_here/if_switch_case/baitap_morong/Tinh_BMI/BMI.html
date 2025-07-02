@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function TinhBMI() {
+    let weight = parseFloat(prompt("Nhập weight"));
+    let height = parseFloat(prompt("Nhập height"));
+    let BMI = weight/(height*height);
+    BMI= BMI.toFixed(2);
+    if(BMI <18.5){
+      alert(BMI+" Thiếu cân");
+    }else if(BMI <= 24.9){
+      alert(BMI+" Bình thường");
+    }else if(BMI <= 29.9){
+      alert(BMI+" Thừa cân");
+    }else{
+      alert(BMI+" Béo phì");
+    }
+  }
+  TinhBMI();
+
+</script>
+</body>
+</html>

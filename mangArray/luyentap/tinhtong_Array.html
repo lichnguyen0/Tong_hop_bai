@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng các phần tử trong mảng</title>
+</head>
+<body>
+<script>
+let array = [2,4,6,8,10];  //tao mot mang
+let max= array[0]; //  "số 0 trong array[0] là chỉ số index của mảng.
+                   // giả sử phần tử đầu tiên của mảng (array[0]) là số lớn nhất.
+                   //Sau đó, bạn dùng vòng lặp for để so sánh các phần tử còn lại với max.
+                   // Nếu gặp phần tử nào lớn hơn max, thì bạn cập nhật lại max.
+
+for(let i=1; i<array.length; i++) {  // dùng vong lặp for để duyệt các số trên mảng, (i=1 ở đây 1 không phải là giá trị mà là index chỉ số của mảng)
+    if (array[i]>max){       //dùng vòng if để so sánh i lúc này bằng 4, max lúc này bằng 2
+                             // nếu phần tử hiện tại lớn hơn max
+        max=array[i];        //  thì cập nhật max
+    }
+}document.write(" so lon nhat"+max) //  in ra số lớn nhất
+
+</script>
+</body>
+</html>

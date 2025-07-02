@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let minutes = 200;
+    let messages = 100;
+    let tinhMin = minutes * 0.1;
+    let tinhMes = messages * 0.05;
+    let Tong = tinhMin + tinhMes;
+
+    if (Tong > 20) {
+        Tong = Tong * 0.9
+    }
+    alert("Tỏng cuoc phai tra la $" + Tong.toFixed(2));
+</script>
+</body>
+</html>
